@@ -154,8 +154,8 @@ body {
   vertical-align: text-bottom;
 }
 
-.intro__icon path {
-  fill: var(--text-decoration-color);
+.intro__icon use {
+  color: var(--text-decoration-color);
 }
 
 .intro_text {
