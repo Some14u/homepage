@@ -181,23 +181,20 @@ body {
 /* Experience and additional info styles */
 
 .experiences {
-  flex: 1 1 60%;
+  flex: 1 1 55%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
   margin-right: 50px;
-}
-
-.experiences>p {
-  margin-bottom: 20px;
 }
 
 .experiences__header {
   color: var(--secondary-text-color);
   text-align: left;
-  margin-bottom: 20px;
 }
 
 .experiences__company-project {
-  margin-left: 15px;
-  margin-bottom: 25px;
+  color: var(--secondary-text-color);
 }
 
 .experiences__company-project-skills {
@@ -239,13 +236,19 @@ body {
 }
 
 .additional-info__education {
-  margin-bottom: 20px;
+  margin-bottom: 2em;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
 }
 
 .additional-info__education-header {
   color: var(--secondary-text-color);
   text-align: left;
-  margin-bottom: 20px;
+}
+
+.additional-info__education-university {
+  color: var(--durability-text-color);
 }
 
 .additional-info__education-university-durability {
@@ -263,6 +266,12 @@ body {
 
 .additional-info__education-university-name {
   color: var(--secondary-text-color);
+  margin-bottom: 10px;
+}
+
+.additional-info__education-university-info {
+  color: var(--secondary-text-color);
+  font-size: 13px;
 }
 
 .additional-info__languages {
