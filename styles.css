@@ -163,6 +163,10 @@ body {
   text-align: justify;
 }
 
+.intro_text:not(:last-child) {
+  margin-bottom: .5em;
+}
+
 .skills__header {
   color: var(--secondary-text-color);
   text-align: center;
