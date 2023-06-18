@@ -115,7 +115,7 @@ body {
   border-color: var(--text-decoration-color);
 }
 
-/* Intro and skills styles */
+/* Intro, skills and related interests styles */
 
 .intro {
   display: flex;
@@ -147,15 +147,27 @@ body {
   margin-bottom: .5em;
 }
 
-.skills__header {
-  color: var(--secondary-text-color);
-  text-align: center;
-  margin-bottom: 15px;
+.skills,
+.related-interests {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
 }
 
-.skills__text {
+.skills__header,
+.related-interests__header {
+  color: var(--secondary-text-color);
+  text-align: center;
+}
+
+.skills__text,
+.related-interests__text {
   color: var(--secondary-text-color);
   text-align: justify;
+}
+
+.related-interests__text {
+  text-indent: 2em;
 }
 
 /* Experience and additional info styles */
