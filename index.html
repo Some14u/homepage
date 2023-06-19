@@ -130,12 +130,12 @@
                 <div class="experiences__company-project">
                   <h3 class="experiences__company-project-name">
                     <a href="#" class="experiences__company-project toggler" aria-expanded="false" aria-controls="web-studio-content">WebStudio</a>
-                    <a class="experiences__company-project-link-icon-wrapper" href="https://some14u.github.io/goit-markup-hw-08">
+                    <a class="experiences__company-project-link-icon-wrapper" href="https://some14u.github.io/goit-markup-hw-08" title="Demonstration">
                       <svg class="contact-info__item-icon">
                         <use href="assets/icons.svg#eye" />
                       </svg>
                     </a>
-                    <a class="experiences__company-project-link-icon-wrapper" href="https://github.com/Some14u/goit-markup-hw-08">
+                    <a class="experiences__company-project-link-icon-wrapper" href="https://github.com/Some14u/goit-markup-hw-08" title="Source code">
                       <svg class="contact-info__item-icon">
                         <use href="assets/icons.svg#gitHub" />
                       </svg>
@@ -149,12 +149,12 @@
                 <div class="experiences__company-project">
                   <h3 class="experiences__company-project-name">
                     <a href="#" class="experiences__company-project toggler" aria-expanded="false" aria-controls="phonebook-frontend-content">Phonebook frontend</a>
-                    <a class="experiences__company-project-link-icon-wrapper" href="https://some14u.github.io/goit-react-hw-08-phonebook">
+                    <a class="experiences__company-project-link-icon-wrapper" href="https://some14u.github.io/goit-react-hw-08-phonebook" title="Demonstration">
                       <svg class="contact-info__item-icon">
                         <use href="assets/icons.svg#eye" />
                       </svg>
                     </a>
-                    <a class="experiences__company-project-link-icon-wrapper" href="https://github.com/Some14u/goit-react-hw-08-phonebook">
+                    <a class="experiences__company-project-link-icon-wrapper" href="https://github.com/Some14u/goit-react-hw-08-phonebook" title="Source code">
                       <svg class="contact-info__item-icon">
                         <use href="assets/icons.svg#gitHub" />
                       </svg>
@@ -171,12 +171,12 @@
                 <div class="experiences__company-project">
                   <h3 class="experiences__company-project-name">
                     <a href="#" class="experiences__company-project toggler" aria-expanded="false" aria-controls="phonebook-backend-content">Phonebook backend</a>
-                    <a class="experiences__company-project-link-icon-wrapper" href="https://hub.docker.com/r/some14u/hw06-email">
+                    <a class="experiences__company-project-link-icon-wrapper" href="https://hub.docker.com/r/some14u/hw06-email" title="Docker image">
                       <svg class="contact-info__item-icon">
                         <use href="assets/icons.svg#eye" />
                       </svg>
                     </a>
-                    <a class="experiences__company-project-link-icon-wrapper" href="https://github.com/Some14u/goit-nodejs-homework-phonebook">
+                    <a class="experiences__company-project-link-icon-wrapper" href="https://github.com/Some14u/goit-nodejs-homework-phonebook" title="Source code">
                       <svg class="contact-info__item-icon">
                         <use href="assets/icons.svg#gitHub" />
                       </svg>
@@ -193,12 +193,16 @@
                 <div class="experiences__company-project">
                   <h3 class="experiences__company-project-name">
                     <a href="#" class="experiences__company-project toggler" aria-expanded="false" aria-controls="flower-gift-shop-content">Flower/gift shop</a>
-                    <a class="experiences__company-project-link-icon-wrapper" href="https://gitlab.com/Some14u/capstone-project-epam/-/raw/main/Docs/Capstone%20project%20interface%20design.pdf">
+                    <a
+                      class="experiences__company-project-link-icon-wrapper"
+                      href="https://gitlab.com/Some14u/capstone-project-epam/-/raw/main/Docs/Capstone%20project%20interface%20design.pdf"
+                      title="Description and screenshots"
+                    >
                       <svg class="contact-info__item-icon">
                         <use href="assets/icons.svg#eye" />
                       </svg>
                     </a>
-                    <a class="experiences__company-project-link-icon-wrapper" href="https://gitlab.com/Some14u/capstone-project-epam">
+                    <a class="experiences__company-project-link-icon-wrapper" href="https://gitlab.com/Some14u/capstone-project-epam" title="Source code">
                       <svg class="contact-info__item-icon">
                         <use href="assets/icons.svg#gitLab" />
                       </svg>
@@ -293,12 +297,14 @@
       const togglers = document.querySelectorAll("[class$='toggler']");
 
       togglers.forEach((toggler) => {
+        toggler.setAttribute("title", "Show details");
         toggler.addEventListener("click", (e) => {
           e.preventDefault();
           const content = document.getElementById(toggler.getAttribute("aria-controls"));
 
           const isOpen = toggler.getAttribute("aria-expanded") === "true";
           toggler.setAttribute("aria-expanded", !isOpen);
+          toggler.setAttribute("title", isOpen ? "Show details" : "Hide details");
 
           content.style.maxHeight = isOpen ? null : content.scrollHeight + "px";
         });
