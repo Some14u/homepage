@@ -294,7 +294,7 @@ a.toggler {
 
 /* Media queries (should be here to override selectors with equal specificity) */
 
-@media screen and (max-width: 576px) {
+@media screen and (width <=576px) {
 
   .main-info,
   .contact_info_container {
