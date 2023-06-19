@@ -1,10 +1,314 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Résumé</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    ― Hello World! &#x1F609;
+    <main>
+      <div class="resume">
+        <div class="container">
+          <div class="resume__block">
+            <h1 class="contact-info__header">Yevhen Porechnyi</h1>
+            <h3 class="contact-info__sub-header">Junior Fullstack Developer</h3>
+
+            <div class="contact_info_container fh">
+              <div class="contact-info__block">
+                <div class="contact-info__item">
+                  <div class="contact-info__item-icon-wrapper">
+                    <svg class="contact-info__item-icon">
+                      <use href="assets/icons.svg#calendar" />
+                    </svg>
+                  </div>
+                  <span>May/23/1981</span>
+                </div>
+                <div class="contact-info__item">
+                  <div class="contact-info__item-icon-wrapper">
+                    <svg class="contact-info__item-icon">
+                      <use href="assets/icons.svg#address" />
+                    </svg>
+                  </div>
+                  <span>Dnipro, Ukraine</span>
+                </div>
+                <a href="tel:+380676216636" rel="author" class="contact-info__item">
+                  <div class="contact-info__item-icon-wrapper">
+                    <svg class="contact-info__item-icon">
+                      <use href="assets/icons.svg#mobile" />
+                    </svg>
+                  </div>
+                  <span>067 621 66 36</span>
+                </a>
+                <a href="email:some1@email.ua" rel="author" class="contact-info__item">
+                  <div class="contact-info__item-icon-wrapper">
+                    <svg class="contact-info__item-icon">
+                      <use href="assets/icons.svg#envelope" />
+                    </svg>
+                  </div>
+                  <span>some1@email.ua</span>
+                </a>
+              </div>
+
+              <div class="contact-info__block contact-info__block--center">
+                <img class="contact-info__avatar" src="assets/avatar.png" alt="Avatar" />
+              </div>
+
+              <div class="contact-info__block">
+                <a href="https://www.linkedin.com/in/some14u" rel="author" class="contact-info__item">
+                  <div class="contact-info__item-icon-wrapper">
+                    <svg class="contact-info__item-icon">
+                      <use href="assets/icons.svg#linkedIn" />
+                    </svg>
+                  </div>
+                  <span>LinkedIn</span>
+                </a>
+                <a href="https://t.me/some14you" rel="author" class="contact-info__item">
+                  <div class="contact-info__item-icon-wrapper">
+                    <svg class="contact-info__item-icon">
+                      <use href="assets/icons.svg#telegram" />
+                    </svg>
+                  </div>
+                  <span>Telegram</span>
+                </a>
+                <a href="https://github.com/Some14u" rel="author" class="contact-info__item">
+                  <div class="contact-info__item-icon-wrapper">
+                    <svg class="contact-info__item-icon">
+                      <use href="assets/icons.svg#gitHub" />
+                    </svg>
+                  </div>
+                  <span>GitHub</span>
+                </a>
+                <a href="https://gitlab.com/Some14u" rel="author" class="contact-info__item">
+                  <div class="contact-info__item-icon-wrapper">
+                    <svg class="contact-info__item-icon">
+                      <use href="assets/icons.svg#gitLab" />
+                    </svg>
+                  </div>
+                  <span>GitLab</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="resume__block">
+            <div class="intro">
+              <div class="intro__icon-wrapper">
+                <svg class="intro__icon">
+                  <use href="assets/icons.svg#quote" />
+                </svg>
+              </div>
+              <div>
+                <p class="intro_text">
+                  As a passionate and motivated junior fullstack developer, I specialize in HTML, CSS, Java, JavaScript, TypeScript and React. I am committed to delivering results through dedicated
+                  development and practice, and have a talent for analyzing and troubleshooting technical issues.
+                </p>
+                <p class="intro_text">My profile: analytical thinking, curiosity and attention to detail, healthy perfectionism, continuous self-improvement.</p>
+                <p class="intro_text">My current goal: continue developing skills and find a nice friendly environment, where I would be able to prove myself as a valuable and productive member.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="resume__block">
+            <div class="skills">
+              <h3 class="skills__header">Skills</h3>
+              <p class="skills__text">
+                HTML5/CSS3/SASS, Responsive/Adaptive design, Git, JavaScript, TypeScript, React, Redux, React query, REST API, Handlebars, MUI/StyledComponents/Bootstrap, Webpack, Parcel, Node.js,
+                MongoDB/mongoose, Java, PostgresDB, Spring BOOT/MVC
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="resume__block">
+            <div class="main-info fh">
+              <div class="experiences">
+                <h3 class="experiences__header">Experience</h3>
+                <p>I don't have any working experience yet, but you can check out my pet projects:</p>
+                <div class="experiences__company-project">
+                  <h3 class="experiences__company-project-name">
+                    <a href="#" class="experiences__company-project toggler" aria-expanded="false" aria-controls="web-studio-content">WebStudio</a>
+                    <a class="experiences__company-project-link-icon-wrapper" href="https://some14u.github.io/goit-markup-hw-08" title="Demonstration">
+                      <svg class="contact-info__item-icon">
+                        <use href="assets/icons.svg#eye" />
+                      </svg>
+                    </a>
+                    <a class="experiences__company-project-link-icon-wrapper" href="https://github.com/Some14u/goit-markup-hw-08" title="Source code">
+                      <svg class="contact-info__item-icon">
+                        <use href="assets/icons.svg#gitHub" />
+                      </svg>
+                    </a>
+                  </h3>
+                  <div class="experiences__company-project collapsible-content" id="web-studio-content">
+                    <span class="experiences__company-project-skills">[HTML, SASS, JS, Parcel, BEM]</span>
+                    <div class="experiences__company-project-description">A website template with a responsive layout. I did both layout and styling. Styling implements BEM concept.</div>
+                  </div>
+                </div>
+                <div class="experiences__company-project">
+                  <h3 class="experiences__company-project-name">
+                    <a href="#" class="experiences__company-project toggler" aria-expanded="false" aria-controls="phonebook-frontend-content">Phonebook frontend</a>
+                    <a class="experiences__company-project-link-icon-wrapper" href="https://some14u.github.io/goit-react-hw-08-phonebook" title="Demonstration">
+                      <svg class="contact-info__item-icon">
+                        <use href="assets/icons.svg#eye" />
+                      </svg>
+                    </a>
+                    <a class="experiences__company-project-link-icon-wrapper" href="https://github.com/Some14u/goit-react-hw-08-phonebook" title="Source code">
+                      <svg class="contact-info__item-icon">
+                        <use href="assets/icons.svg#gitHub" />
+                      </svg>
+                    </a>
+                  </h3>
+                  <div class="experiences__company-project collapsible-content" id="phonebook-frontend-content">
+                    <span class="experiences__company-project-skills">[JavaScript, React, redux, REST API, MUI, Webpack, router]</span>
+                    <div class="experiences__company-project-description">
+                      A frontend part of Phonebook application on React, capable of working in conjunction with the
+                      <a href="https://connections-api.herokuapp.com/docs/">Heroku-based app backend API</a>.
+                    </div>
+                  </div>
+                </div>
+                <div class="experiences__company-project">
+                  <h3 class="experiences__company-project-name">
+                    <a href="#" class="experiences__company-project toggler" aria-expanded="false" aria-controls="phonebook-backend-content">Phonebook backend</a>
+                    <a class="experiences__company-project-link-icon-wrapper" href="https://hub.docker.com/r/some14u/hw06-email" title="Docker image">
+                      <svg class="contact-info__item-icon">
+                        <use href="assets/icons.svg#eye" />
+                      </svg>
+                    </a>
+                    <a class="experiences__company-project-link-icon-wrapper" href="https://github.com/Some14u/goit-nodejs-homework-phonebook" title="Source code">
+                      <svg class="contact-info__item-icon">
+                        <use href="assets/icons.svg#gitHub" />
+                      </svg>
+                    </a>
+                  </h3>
+                  <div class="experiences__company-project collapsible-content" id="phonebook-backend-content">
+                    <span class="experiences__company-project-skills">[JavaScript, Node.js, express, mongoDB, mongoose, JOI, REST API]</span>
+                    <div class="experiences__company-project-description">
+                      An API for Phonebook frontend, based on node.js with cloud mongoDB storage. Authentication, email verification, JOI validation. You can deploy it using
+                      <a href="https://hub.docker.com/r/some14u/hw06-email">docker image</a>.
+                    </div>
+                  </div>
+                </div>
+                <div class="experiences__company-project">
+                  <h3 class="experiences__company-project-name">
+                    <a href="#" class="experiences__company-project toggler" aria-expanded="false" aria-controls="flower-gift-shop-content">Flower/gift shop</a>
+                    <a
+                      class="experiences__company-project-link-icon-wrapper"
+                      href="https://gitlab.com/Some14u/capstone-project-epam/-/raw/main/Docs/Capstone%20project%20interface%20design.pdf"
+                      title="Description and screenshots"
+                    >
+                      <svg class="contact-info__item-icon">
+                        <use href="assets/icons.svg#eye" />
+                      </svg>
+                    </a>
+                    <a class="experiences__company-project-link-icon-wrapper" href="https://gitlab.com/Some14u/capstone-project-epam" title="Source code">
+                      <svg class="contact-info__item-icon">
+                        <use href="assets/icons.svg#gitLab" />
+                      </svg>
+                    </a>
+                  </h3>
+                  <div class="experiences__company-project collapsible-content" id="flower-gift-shop-content">
+                    <span class="experiences__company-project-skills">[Java, REST API, postgresDB, SPRING/BOOT/MVC, auth]</span>
+                    <div class="experiences__company-project-description">
+                      Multipage shop, based on java spring + postgresDB. Very simple and minimalistic, can authenticate users and store their orders into the database.
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="additional-info fv">
+                <div class="additional-info fv">
+                  <div class="additional-info__education">
+                    <h3 class="additional-info__education-header">Education</h3>
+
+                    <div class="additional-info__education-university">
+                      <span class="additional-info__education-university-durability">2003—2008</span>
+                      <h3 class="additional-info__education-university-speciality">
+                        <a href="#" class="experiences__company-project toggler" aria-expanded="false" aria-controls="knure-content">Software For Automated Systems</a>
+                      </h3>
+                      <div class="additional-info__education-university collapsible-content" id="knure-content">
+                        <p class="additional-info__education-university-name">Kharkiv National University of Radio Electronics</p>
+                        <p class="additional-info__education-university-info">Studied C#, assembler, low-level microprocessor programming, etc.</p>
+                      </div>
+                    </div>
+
+                    <div class="additional-info__education-university">
+                      <span class="additional-info__education-university-durability">2022</span>
+                      <h3 class="additional-info__education-university-speciality">
+                        <a href="#" class="experiences__company-project toggler" aria-expanded="false" aria-controls="epam-content">Java Backend Course</a>
+                      </h3>
+                      <div class="additional-info__education-university collapsible-content" id="epam-content">
+                        <p class="additional-info__education-university-name">Upskill EPAM</p>
+                        <p class="additional-info__education-university-info">Studied Java, Spring, Spring Boot and MVC stack.</p>
+                      </div>
+                    </div>
+
+                    <div class="additional-info__education-university">
+                      <span class="additional-info__education-university-durability">2022—2023</span>
+                      <h3 class="additional-info__education-university-speciality">
+                        <a href="#" class="experiences__company-project toggler" aria-expanded="false" aria-controls="goit-content">JavaScript Fullstack Course</a>
+                      </h3>
+                      <div class="additional-info__education-university collapsible-content" id="goit-content">
+                        <p class="additional-info__education-university-name">GOIT</p>
+                        <p class="additional-info__education-university-info">
+                          Sequentially Studied Git, HTML,CSS/SASS, JavaScript, React, Redux and Node.js. While completing test tasks, I had to deal with Bootstrap, Material Design, React Router and
+                          Formik. On the backend behalf I studied Express, MongoDB/Mongose, Postgres/TypeOrm, nodeMailer, etc.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="additional-info__languages">
+                    <h3 class="additional-info__languages-header">Languages</h3>
+                    <p class="additional-info__languages-item">English — Intermediate</p>
+                    <p class="additional-info__languages-item">Ukrainian — Native</p>
+                    <p class="additional-info__languages-item">Russian — Fluent</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="resume__block">
+            <div class="related-interests">
+              <h3 class="related-interests__header">Related Interests and Proficiencies</h3>
+              <p class="related-interests__text">
+                Programming has been my hobby since I was 12 years old, and throughout all this time, I have been interested in game development. As far back as the 90s, I was writing graphic engines
+                in assembly language, 3D engines in Pascal, and so on.
+              </p>
+              <p class="related-interests__text">
+                There was also a period when I was deeply engaged in game translation to Russian. I disassembled ready-made executable files, repacked assemblies for Unity, translated games based on
+                LUA scripts, and much more. I even gained experience in administering and populating game-related wiki projects, which is also closely related to localization activities.
+              </p>
+              <p class="related-interests__text">
+                Additionally, among the incidental skills that are not mentioned in my resume, I have a basic proficiency in 3ds Max (able to create static models) and CorelDRAW (both vector and
+                raster graphics).
+              </p>
+              <p class="related-interests__text">
+                Recently, I have become fascinated by AI-based technologies. I'm studying and actively engaging with chatGPT, striving to apply the practical outcomes of interacting with it.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script>
+      const togglers = document.querySelectorAll("[class$='toggler']");
+
+      togglers.forEach((toggler) => {
+        toggler.setAttribute("title", "Show details");
+        toggler.addEventListener("click", (e) => {
+          e.preventDefault();
+          const content = document.getElementById(toggler.getAttribute("aria-controls"));
+
+          const isOpen = toggler.getAttribute("aria-expanded") === "true";
+          toggler.setAttribute("aria-expanded", !isOpen);
+          toggler.setAttribute("title", isOpen ? "Show details" : "Hide details");
+
+          content.style.maxHeight = isOpen ? null : content.scrollHeight + "px";
+        });
+      });
+    </script>
   </body>
 </html>
